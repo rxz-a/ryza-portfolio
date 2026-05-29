@@ -224,13 +224,13 @@ export default function Works({ darkMode }) {
         {/* Filtering */}
         <div className="flex flex-col items-center gap-4 mb-10 w-full">
           {/* Category Tabs */}
-          <div className={`flex flex-nowrap justify-center gap-1.5 p-1 rounded-xl w-full sm:w-auto ${darkMode ? 'bg-dark-card border border-dark-border' : 'bg-gray-100 border border-gray-200 shadow-sm'
+          <div className={`flex flex-wrap justify-center gap-1.5 p-1 rounded-xl w-full sm:w-auto ${darkMode ? 'bg-dark-card border border-dark-border' : 'bg-gray-100 border border-gray-200 shadow-sm'
             }`}>
             {filters.map((filter) => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-300 ${activeFilter === filter
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all duration-300px-2 py-1 sm:px-3 sm:py-1.5 rounded-lg text-[10px] sm:text-xs font-bold transition-all duration-300 ${activeFilter === filter
                   ? 'text-dark-pure bg-gold shadow-sm'
                   : darkMode
                     ? 'text-light-muted hover:text-light-text'
@@ -336,7 +336,7 @@ export default function Works({ darkMode }) {
               {/* Prev Button */}
               <button
                 onClick={goPrev}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-[210] text-white hover:text-white/60 transition-all duration-300"  
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-[210] text-white hover:text-white/60 transition-all duration-300"
                 aria-label="Previous"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -347,7 +347,7 @@ export default function Works({ darkMode }) {
               {/* Next Button */}
               <button
                 onClick={goNext}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-[210] text-white hover:text-white/60 transition-all duration-300"  
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-[210] text-white hover:text-white/60 transition-all duration-300"
                 aria-label="Next"
               >
                 <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
