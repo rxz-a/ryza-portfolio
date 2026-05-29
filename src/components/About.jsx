@@ -100,7 +100,7 @@ export default function About({ darkMode }) {
             </h3>
             <p className={`text-sm sm:text-base leading-relaxed mb-4 ${darkMode ? 'text-light-muted' : 'text-gray-600'
               }`}>
-              I am an Information Technology student at Pamantasan ng Lungsod ng Valenzuela (PLV) with a growing interest in networking, troubshooting, web development, and software testing. I started as somone who's curious about how systems and websites works throughout and this gradually became my passion for learning technology and building a real-world solutions.
+              I am an Information Technology student at Pamantasan ng Lungsod ng Valenzuela (PLV) with a growing interest in networking, troubshooting, web development, and software testing. I started as someone who's curious about how systems and websites works throughout and this gradually became my passion for learning technology and building a real-world solutions.
             </p>
             <p className={`text-sm sm:text-base leading-relaxed ${darkMode ? 'text-light-muted' : 'text-gray-600'
               }`}>
